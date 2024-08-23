@@ -1,4 +1,4 @@
-<h1>Adicionar Administrador</h1>
+<h2>Adicionar Usuário do Sistema</h2>
 
 <form method="POST" action="adicionar_action.php">
     <label>

@@ -32,7 +32,8 @@
     interface UsuarioDao {
 
         public function add(Usuario $u);
-        public function findByEmail($email);
-        public function update(Usuario $u);
-        public function delete($id);
+        public function authenticationLogin($email, $senha);
+        public function findAll();
+        //public function update(Usuario $u);
+        //public function delete($id);
     }
