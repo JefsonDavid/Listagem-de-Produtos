@@ -3,9 +3,9 @@
     require 'models/UsuarioDaoMysql.php';
     require 'models/ProdutosDaoMysql.php';
 
-    $usuarioDao = new UsuarioDaoMysql($pdo);
+    $produtosDao = new ProdutosDaoMysql($pdo);
 
-    $lista = $usuarioDao->findAll();
+    $lista = $produtosDao->findAll();
 ?>
 
 <a href="adicionar_produtos.php">ADICIONAR PRODUTOS</a>
@@ -20,17 +20,17 @@
     </tr>
 
 
-    <?php foreach($lista as $usuario): ?>
+    <?php foreach($lista as $produtos): ?>
 
         <tr>
-            <td><?= $usuario->getId(); ?></td>
-            <td><?= $usuario->getNome(); ?></td>
-            <td><?= $usuario->getQuantidade(); ?></td>
-            <td><?= $usuario->getValor(); ?></td>
+            <td><?= $produtos->getId(); ?></td>
+            <td><?= $produtos->getNome(); ?></td>
+            <td><?= $produtos->getQuantidade(); ?></td>
+            <td><?= $produtos->getValor(); ?></td>
             <td>
-                <a href="editar.php?id=<?=$usuario->getId(); ?>">[ Editar ]</a>
+                <a href="editar.php?id=<?=$produtos->getId(); ?>">[ Editar ]</a>
 
-                <a href="excluir.php?id=<?= $usuario->getId(); ?>" onclick="return confirm('Tem certeza que deseja excluir?')">[ Excluir ]</a>
+                <a href="excluir.php?id=<?= $produtos->getId(); ?>" onclick="return confirm('Tem certeza que deseja excluir?')">[ Excluir ]</a>
             </td>
         </tr>
     <?php endforeach; ?>

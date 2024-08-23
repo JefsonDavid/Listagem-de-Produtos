@@ -18,7 +18,7 @@
         }
 
         public function setNome($n) {
-            $this->nome = ucwords(trim($n));
+            $this->nome = $n;
         }
 
         public function getQuantidade() {
