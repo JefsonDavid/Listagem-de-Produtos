@@ -43,9 +43,9 @@
             <td><?= $produtos->getQuantidade(); ?></td>
             <td><?= $produtos->getValor(); ?></td>
             <td>
-                <a class="adicionar" href="adicionar_produtos.php">ADICIONAR</a>
+                <a class="adicionar" href="adicionar_produtos.php">Adicionar</a>
 
-                <a class="editar" href="editar.php?id=<?=$produtos->getId(); ?>"> Editar </a>
+                <a class="editar" href="editar.php?id=<?= $produtos->getId(); ?>"> Editar </a>
 
                 <a class="excluir" href="excluir.php?id=<?= $produtos->getId(); ?>" onclick="return confirm('Tem certeza que deseja excluir?')"> Excluir </a>
             </td>

@@ -40,4 +40,5 @@
 
     interface ProdutosDao{
         public function findAll();
+        public function findById($id);
     }

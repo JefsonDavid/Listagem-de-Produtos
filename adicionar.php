@@ -1,14 +1,26 @@
-<h2>Adicionar Usuário do Sistema</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/adicionar_style.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>  
+    <div class="container">
+        <form method="POST" action="adicionar_action.php">
+            <h1>Cadastro de Usuário</h1>
+            <label class="input-container">
+                <p>Email:</p><br/>
+                <input type="email" name="email" />
+            </label><br/><br/>
+            <label class="input-container">
+                <p>Senha:</p><br/>
+                <input type="password" name="senha">
+            </label><br/><br/>
 
-<form method="POST" action="adicionar_action.php">
-    <label>
-        Email:<br/>
-        <input type="email" name="email" />
-    </label><br/>
-    <label>
-        Senha:<br/>
-        <input type="password" name="senha">
-    </label><br/><br/>
-
-    <input type="submit" value="Adicionar" />
-</form>
+            <button type="submit" class="submit-button">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

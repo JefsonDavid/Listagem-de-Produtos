@@ -1,0 +1,130 @@
+* {
+    /* resetar o css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* Com essa url cada vez que vc entrar vai aparecer uma imagem diferente  */
+    background-image: url(../img/background.jpg);
+    /* Queremos que essas imagens cobra a tela toda */
+    background-size: cover;
+    /* A imagem vai ficar sempre no centro */
+    background-position: center;
+    /* A altura mínima do nosso body */
+    min-height: 100vh;
+    /* Vamos centralizar  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* largura */
+    width: 420px;
+    background: transparent;
+    /* background-color: #504d5c96; */
+    border: 2px solid #5100b5cf;
+    /* border: 2px solid rgba(255, 255, 255, .2); */
+    /* Vai criar um filtro pra deixar mais bonito */
+    /* Dá um efeito de embaçado */
+    backdrop-filter: blur(20px); 
+    /* Cantos arredondados */
+    border-radius: 10px;
+    /* Espaçamento interno */
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #5100b5cf;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px 45px 20px 20px; 
+}
+
+.input-container input::placeholder {
+    color: #fff;
+}
+
+.input-container img {
+    position: absolute;
+    right: 24px;
+    top: 20%;
+    margin-top: 5px;
+}
+
+.input-container a {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.input-container a:hover {
+    text-decoration: underline;
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #5100b5;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #6109cb;
+}
+
+.register-link {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.register-link p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.register-link p a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
