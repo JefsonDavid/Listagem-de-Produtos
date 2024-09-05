@@ -16,7 +16,7 @@
         }
 
         if($produtos === false) {
-            header("Location: teste.php");
+            header("Location: listagem.php");
             exit;
         }
     ?>

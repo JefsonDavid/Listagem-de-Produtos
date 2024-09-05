@@ -11,7 +11,8 @@
 
 
     if($id && $nome && $quantidade && $valor) {
-        $produtos = new Usuario();
+        
+        $produtos = new Produtos();
         $produtos->setId($id);
         $produtos->setNome($nome);
         $produtos->setQuantidade($quantidade);
