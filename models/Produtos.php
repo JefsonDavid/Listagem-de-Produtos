@@ -39,6 +39,9 @@
     }
 
     interface ProdutosDao{
+        public function add(Produtos $p);
         public function findAll();
         public function findById($id);
+        public function update(Produtos $p);
+        public function delete($id);
     }
